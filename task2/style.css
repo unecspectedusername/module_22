@@ -1,0 +1,90 @@
+/*Общие стили*/
+
+* {
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+}
+
+body {
+    width: 100dvw;
+    height: 100dvh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    height: 40%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+button {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+.icon, .text {
+    padding-block: 1rem;
+}
+
+.icon {
+    width: 20%;
+}
+
+.text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+/*Стили для кнопки с классами*/
+
+.use-class {
+    background: #51e2f5;
+
+    .icon {
+        background: #46bdcd;
+    }
+}
+
+/*Стили для кнопки с innerHTML*/
+
+.use-inner-html {
+    background: #fcabb4;
+
+    .icon {
+        background: #da969e;
+    }
+}
